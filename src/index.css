@@ -4,61 +4,60 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --black: #0b0b0b;       
+  --charcoal: #1a1a1a;     
+  --gold: #d4af37;        
+  --gold-dark: #b8962e;    
+  --champagne: #f7e7ce;    
+  --champagne-soft: #e8d5b5; 
+}
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f1f4fa;
-  color: #202b43;
+  background-color: var(--black);
+  color: var(--champagne);
 }
 
-.app {
-  min-height: 100vh;
-  padding: 60px 30px;
-  text-align: center;
+h1, h2, h3, h4 {
+  color: var(--gold);
 }
 
-.app h1 {
-  font-size: 36px;
-  margin-bottom: 12px;
-  color: #273c75;
+a {
+  color: var(--gold);
+}
+a:hover {
+  color: var(--champagne);
 }
 
-.subtitle {
-  color: #78839a;
-  margin-bottom: 40px;
+header, nav, footer {
+  background-color: var(--charcoal);
+  border-bottom: 1px solid var(--gold);
 }
 
-.student-container {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
-  gap: 25px;
+section, .card, .container {
+  background-color: var(--charcoal);
+  border: 1px solid rgba(212, 175, 55, 0.4);
 }
 
-.profile-card {
-  background: white;
-  width: 300px;
-  padding: 25px;
-  border: 1px solid #dce3ef;
-  border-radius: 15px;
-  text-align: left;
-  box-shadow: 0 5px 20px rgba(30, 50, 90, 0.08);
-  transition: 0.3s;
+button, .btn {
+  background-color: var(--gold);
+  color: var(--black);
+  border: none;
+}
+button:hover, .btn:hover {
+  background-color: var(--champagne);
 }
 
-.profile-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 12px 25px rgba(30, 50, 90, 0.15);
+input, textarea, select {
+  background-color: var(--black);
+  color: var(--champagne);
+  border: 1px solid var(--gold);
 }
 
-.profile-card h2 {
-  font-size: 21px;
-  color: #354fa0;
-  margin-bottom: 15px;
+table, th, td {
+  border-color: var(--gold);
 }
-
-.profile-card p {
-  margin: 14px 0;
-  font-size: 15px;
+th {
+  background-color: var(--gold);
+  color: var(--black);
 }
