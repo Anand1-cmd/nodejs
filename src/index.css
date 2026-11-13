@@ -1,0 +1,64 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f4fa;
+  color: #202b43;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.app h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #273c75;
+}
+
+.subtitle {
+  color: #78839a;
+  margin-bottom: 40px;
+}
+
+.student-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.profile-card {
+  background: white;
+  width: 300px;
+  padding: 25px;
+  border: 1px solid #dce3ef;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 5px 20px rgba(30, 50, 90, 0.08);
+  transition: 0.3s;
+}
+
+.profile-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(30, 50, 90, 0.15);
+}
+
+.profile-card h2 {
+  font-size: 21px;
+  color: #354fa0;
+  margin-bottom: 15px;
+}
+
+.profile-card p {
+  margin: 14px 0;
+  font-size: 15px;
+}
